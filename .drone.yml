@@ -12,3 +12,34 @@ steps:
     commands:
       - hostname
 
+
+---
+kind: pipeline
+type: exec
+name: test2
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: test2
+    commands:
+      - hostname
+
+
+
+---
+kind: pipeline
+type: exec
+name: test3
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: test3
+    commands:
+      - hostname
+
