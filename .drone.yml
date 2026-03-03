@@ -1,7 +1,7 @@
 ---
 kind: pipeline
 type: exec
-name: test
+name: fixe
 
 platform:
   os: linux
@@ -11,35 +11,41 @@ steps:
   - name: test
     commands:
       - hostname
-
+node:
+    instance: fixe
 
 ---
 kind: pipeline
 type: exec
-name: test2
+name: ca
 
 platform:
   os: linux
   arch: amd64
 
 steps:
-  - name: test2
+  - name: ca
     commands:
       - hostname
 
+node:
+    instance: ca
 
 
 ---
 kind: pipeline
 type: exec
-name: test3
+name: fr
 
 platform:
   os: linux
   arch: amd64
 
 steps:
-  - name: test3
+  - name: fr
     commands:
       - hostname
+
+node:
+    instance: fr
 
