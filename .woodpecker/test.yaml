@@ -3,5 +3,6 @@ when:
 
 steps:
   - name: test
+    image: debian
     commands:
       - hostname
