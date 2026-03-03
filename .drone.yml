@@ -12,7 +12,7 @@ steps:
     commands:
       - hostname
 node:
-    instance: fixe
+    instance: fixe_exec_amd64_runner
 
 ---
 kind: pipeline
@@ -29,8 +29,7 @@ steps:
       - hostname
 
 node:
-    instance: ca
-
+    instance: ca_exec_amd64_runner
 
 ---
 kind: pipeline
@@ -47,5 +46,5 @@ steps:
       - hostname
 
 node:
-    instance: fr
+    instance: fr_exec_amd64_runner
 
