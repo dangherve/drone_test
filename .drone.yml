@@ -8,7 +8,7 @@ platform:
   arch: amd64
 
 steps:
-  - name:
+  - name: test
     commands:
       - hostname
 
