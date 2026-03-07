@@ -1,8 +1,19 @@
 when:
   - event: push
 
+
 steps:
   - name: test
     image: debian
     commands:
+      - hostname
+
+when:
+  - event: push
+
+steps:
+  - name: testCron
+    image: debian
+    commands:
+      - date
       - hostname
